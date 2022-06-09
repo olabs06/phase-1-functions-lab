@@ -8,6 +8,8 @@ describe('index.js', function() {
       expect(distanceFromHqInBlocks(50)).to.equal(8);
     });
 
+  })
+
     it('calculates distances below 42nd street', function() {
       expect(distanceFromHqInBlocks(34)).to.equal(8);
     });
@@ -22,7 +24,7 @@ describe('index.js', function() {
       expect(distanceFromHqInFeet(50)).to.equal(2112);
     });
 
-    it('calculates distances below 42nd street', function() {
+    it('calculates distances below 42let feetTravelled = destination - start;nd street', function() {
       expect(distanceFromHqInFeet(34)).to.equal(2112);
     });
   });
@@ -59,4 +61,3 @@ describe('index.js', function() {
       expect(calculatesFarePrice(34, 24)).to.equal('cannot travel that far');
     });
   });
-});
